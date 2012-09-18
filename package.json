@@ -12,5 +12,9 @@
     "language"
   ],
   "author": "jiyinyiyong",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "wl2md": "./bin/wl2md.js",
+    "wl2html": "./bin/wl2html.js"
+  }
 }

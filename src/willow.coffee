@@ -52,7 +52,7 @@ fold = (arr) ->
       ret.push ret[end].pop()
     if ret[end].length is 0
       ret = ret[...end].concat ret[end+1..]
-  show ret
+  # show ret
   ret
 
 text = (line) ->
@@ -97,8 +97,8 @@ text = (line) ->
     token += '</code>'
   else if mode is 'bold'
     token += '</b>'
-  show token
-  show token.length
+  # show token
+  # show token.length
   draw token
 
 div = (arr) ->

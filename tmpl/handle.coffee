@@ -3,10 +3,11 @@ show = (x) -> console.log x
 ls = localStorage
 
 $ ->
-  old = ls.text or ''
-  ls.html = willow old
-  $('#text').val old
-  $('#play').html ls.html
+  if ls.text? and ls.text.trim().length > 0
+    old = ls.text
+    ls.html = willow old
+    $('#text').val old
+    $('#play').html ls.html
 
   $('#text').bind 'input', ->
     ls.text = $('#text').val()
