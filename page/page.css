@@ -1,0 +1,72 @@
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  width: 4px;
+  background: #fee7e7;
+}
+::-webkit-scrollbar-thumb {
+  background: #bf4040;
+  border-radius: 2px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background: #f7f7f7;
+}
+#body {
+  width: 1200px;
+  height: 100%;
+  margin: 0px auto;
+  font-family: 'monospace', 'microsoft yahei';
+}
+#body #banner {
+  padding: 20px 12px;
+}
+#body #main {
+  height: 600px;
+}
+#body #main #text,
+#body #main #play {
+  width: 48%;
+  float: left;
+  height: 100%;
+  resize: none;
+  overflow-x: scroll;
+  overflow-x: hidden;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  line-height: 20px;
+}
+#body #main #text {
+  border: none;
+  outline: none;
+  margin: 0px;
+  box-shadow: 0px 0px 6px #ccc;
+  padding: 8px 12px 40px;
+}
+#body #main #play {
+  padding: 20px 12px 40px;
+  box-shadow: 0px 0px 4px #d1d1fa;
+}
+#body #main #play pre {
+  margin: 0px;
+  padding: 0px 16px;
+}
+#body #main #play pre,
+#body #main #play code {
+  background: #e6e6e6;
+  border-radius: 4px;
+}
+#body #main #play>code {
+  padding: 0px 6px;
+}
+#body #main #play a {
+  text-decoration: none;
+  background: #e8e8fc;
+  padding: 0px 4px;
+  border-radius: 4px;
+}

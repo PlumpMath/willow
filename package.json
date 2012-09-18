@@ -1,0 +1,16 @@
+{
+  "name": "willow",
+  "version": "0.0.0",
+  "description": "light-weight markup language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "markup",
+    "language"
+  ],
+  "author": "jiyinyiyong",
+  "license": "MIT"
+}
