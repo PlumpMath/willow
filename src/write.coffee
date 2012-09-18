@@ -49,7 +49,8 @@ wl2md = ->
 
 wl2html = ->
   dest += '.html'
-  tmpl = fs.readFileSync '../page/tmpl.html', 'utf8'
+  tmpl_path = path.join __dirname, '../page/tmpl.html'
+  tmpl = fs.readFileSync tmpl_path, 'utf8'
   fs.writeFileSync dest, tmpl.replace('@@@', (willow code))
 
 exports.run = (mark) ->

@@ -7,9 +7,10 @@ $ ->
     old = ls.text
     ls.html = willow old
     $('#text').val old
-    $('#play').html ls.html
 
-  $('#text').bind 'input', ->
+  do render = ->
     ls.text = $('#text').val()
     ls.html = willow ls.text
     $('#play').html ls.html
+
+  $('#text').bind 'input', render

@@ -7,8 +7,9 @@ exports.nc2md = (file) ->
   list = list.map (line) ->
     line = line.trimRight()
     if line is '\\' then '<br>'
-    else if line.length <= 2 then line
-    else if line[0..1] is ss then ss+line else line+ss
+    # else if line.length <= 2 then line
+    else if line[0..1] is ss then ss+line
+    else line+ss
   copy = []
   normal = true
   for line in list
